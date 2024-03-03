@@ -72,3 +72,21 @@ train_quit.csv
 test_features.csv
 Целевой признак тестовой выборки:
 test_target_quit.csv
+
+
+## Выводы:
+
+Лучшей моделью для прогноза удовлетворенности выбрано дерево решений с параментрами:
+* max_depth=11,
+* max_features=8,
+* min_samples_leaf=5,
+* min_samples_split=11.
+Модель показаа лучшее качество на выбранной метрике SMAPE.
+
+Из 4 моделей для прогноза оттока (DecisionTreeClassifier, KNeighborsClassifier, LogisticRegression, SVC) лучшей вновь оказалось дерево решений, хотя SVC тоде показывал неплохое качество, но на тестовой выборке уступает дереву с параметрами:
+* max_depth=7,
+* max_features=11,
+* min_samples_leaf=6,
+* min_samples_split=9.
+
+Сформиулированы предложения для бизнеса. 
